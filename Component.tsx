@@ -9,7 +9,7 @@ const Component = () => {
     getProductsFromApi();
   }, []);
 
-  const addToCart = (product: { addedToCart: boolean }): void => {
+  const addToCart = (product): void => {
     api("/add-to-card", { product });
 
     product.addedToCart = true;
